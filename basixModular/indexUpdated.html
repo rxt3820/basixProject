@@ -10,8 +10,23 @@
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+    <$php
+      $picture='';
+        require $path.'../../../dbConnect.inc';
+      $result = $mysqli->query($sql);
 
+      if($result->num_rows > 0){
+        //output the data for each row
+        while ($row = $result->FETCH_ASSOC()) {
+          echo $row['content']
+      }
+      else {
+        echo "0 results";
+      }
+    }
+    ?>
   <body>
+  <div id="container">
     <div id="bgimage">
         <div id="cont">
           <div id="term" class="term term-ready">
@@ -45,5 +60,6 @@
             </div> <!-- end of abouttext -->
             
         </div> <!-- end of about -->
+    </div> <!-- end of container div -->
   </body>
 </html>
