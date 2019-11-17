@@ -1,0 +1,120 @@
+html {
+
+    background: #000000;
+    /* fallback for old browsers */
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+
+body {
+    min-height: 20vh;
+    padding: 10vh 10vw;
+    color: hsl(0, 100%, 100%);
+    font-size: 130%;
+}
+
+body a {
+    color: #4CAF50
+}
+
+h1 {
+    line-height: 1.5;
+    display: inline;
+    background-image: linear-gradient(transparent 50%,
+            #4CAF10 50%,
+            #4CAF50 85%,
+            transparent 85%,
+            transparent 85%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+}
+
+@keyframes animatedBackground {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+.centr {
+    text-align: center;
+    position: relative;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*Page styles*/
+
+
+.boxes {
+    margin: auto;
+    padding: 2em;
+/*    background: #484848;*/
+    font-family: 'Fira Code', monospace;
+    border: 3px solid white;
+}
+p{
+    text-align: left;
+}
+
+dt{
+    text-decoration: underline;
+}
+
+.command{
+    max-width: 35em; 
+    padding-top: 1em;
+}
+/*Checkboxes styles*/
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 2.5em;
+    margin-bottom: 2.5em;
+    font: 14px/20px 'Open Sans', Arial, sans-serif;
+    color: #ddd;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #4CAF50;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
