@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="learn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div>
+        <!-- have a black background-->
+
+        <h1>Getting Started - Mac</h1>
+
+        <div class="boxes">
+            <p>
+                Unix/Linux is already accessible to Mac users by using the terminal.
+                You can find the terminal by going to your utilities folder then selecting the terminal. When you open your terminal you will first see the last login on your account as well as the prompt which ends in a dollar sign($).
+            </p>
+
+            <br>
+
+            <input type="checkbox" id="box-1">
+            <label for="box-1">When you open your terminal you will first see the last login on your account as well as the prompt which ends in a dollar sign($). Then you're all set
+            </label>
+
+
+
+        </div>
+
+
+        <br><br><br>
+        <h1> Getting Started - Windows</h1>
+        <div class="boxes">
+            <p>
+                Unix/Linux is a bit harder to set up on windows but try following these steps or watch the video that is linked below
+            </p>
+
+            <br>
+
+            <input type="checkbox" id="box-2">
+            <label for="box-2">Go to settings in Windows 10. On the left, you will see for developers click on that button.
+            </label>
+
+            <input type="checkbox" id="box-3">
+            <label for="box-3">Now click the button "Developer mode", this will take a few mins to install.</label>
+
+            <input type="checkbox" id="box-4">
+            <label for="box-4">Then open your control panel and click on programs and click turn windows features on or off.
+            </label>
+
+            <input type="checkbox" id="box-5">
+            <label for="box-5">Scroll down to Windows Subsystem for Linux and check the box and hit okay. Once this is down you will have to click restart to restart your computer with the new software.</label>
+
+            <input type="checkbox" id="box-6">
+            <label for="box-6">Once your computer is restarted then search for bash on your computer. Your command terminal will display a message that you need an installed distribution, so open the windows store.</label>
+
+            <input type="checkbox" id="box-7">
+            <label for="box-7">In the store search for ubuntu and click on ubuntu and install it. Once it is installed click the launch button.
+            </label>
+
+            <input type="checkbox" id="box-8">
+            <label for="box-8">It will ask you to create a new Unix username so type that in and enter a custom password and then you're done! <br /> Now you're ready to continue to more tutorials have fun!
+            </label>
+        </div>
+
+        <br><br><br>
+        <h1> Intro to Commands </h1>
+        <div class="boxes">
+            <p>
+                A command is an order provided by a user asking a machine to do something, such as running a single program or a series of related programs. Commands are usually triggered by accessing them on the command line (i.e. the all-text screen mode) and then hitting the enter key, which sends them to the container. You can access the command line by opening the terminal application you downloaded previously.
+            </p>
+
+            <br>
+            <dl>
+                <dt>PWD</dt>
+                <dd> Pwd stands for the Print Working Directory. It prints the route of the working directory, beginning with the root file.</dd>
+                <dd><img class="command" src="pwd_command-01.png"></dd>
+
+                <br>
+
+                <dt>cd</dt>
+                <dd>The cd command in Linux is known as the change directory command. It is used to modify the current working directory.</dd>
+
+                <br>
+
+                <dt>cd/</dt>
+                <dd>This command is used to change the working directory to the root directory. The root directory is the first directory in the hierarchy of your filesystem.</dd>
+
+                <br>
+
+                <dt>cd~</dt>
+                <dd>This command is used to change the directory to your home directory.</dd>
+
+                <br>
+
+                <dt>cd..</dt>
+                <dd>This command is used to move to the parent directory of the current directory, or one level up from the current directory. ".." is the parent directory.
+                </dd>
+
+                <br>
+
+                <dt>Options For Different Commands</dt>
+                <dd>Options modify the way in which a command works. Options are often single letters prefixed with a dash (-) and set off by any number of spaces or tabs. Multiple options in one command line can be set off individually (like -a -b), or, in some cases, you can combine them after a single dash (like -ab).</dd>
+
+                <br>
+
+                <dt>ls</dt>
+                <dd>This command is used to list out the information about the folder or directory data within the file system.</dd>
+
+                <br>
+
+                <dt>ls -la</dt>
+                <dd>This command is used to list out the information about the folder including the size, modified date and time, file or folder name and owner of the file and its permissions.</dd>
+
+                <br>
+
+                <dt>rm</dt>
+                <dd>Delets a file.</dd>
+
+            </dl>
+        </div>
+
+        <br><br><br>
+        <h1> File Manipulation </h1>
+        <div class="boxes">
+            <br>
+            <dl>
+                <dt>Touch</dt>
+                <dd>Creates or modifies files, updates the timestamp of the file.</dd>
+
+                <br>
+
+                <dt>Nano</dt>
+                <dd>Makes the terminal act as a command-line text editor.</dd>
+
+                <br>
+
+                <dt>Chmod</dt>
+                <dd>Changes the permission of file (read, write, execute); permissions can be set through symbolic and numeric notation.</dd>
+            </dl>
+        </div>
+
+        <br><br><br>
+        <h1> More Commands </h1>
+        <div class="boxes">
+            <br>
+            <dl>
+                <dt>clear</dt>
+                <dd>Clears the window of all text in order to make it easier to read the results of your commands.</dd>
+
+                <br>
+
+                <dt>history</dt>
+                <dd>Shows the previous commands that you typed</dd>
+
+                <br>
+
+                <dt>date</dt>
+                <dd>shows to current date and time
+                    <dd />
+                <dd>- (-u) represent the date/time in GMT/UTC
+                </dd>
+                <dd>- --date =“string” (top help represent past dates)
+                </dd>
+
+                <br>
+
+                <dt>say</dt>
+                <dd>Converts the text that you have typed to audible speech </dd>
+                <dd>- -v tp help specify the voice to say the command
+                </dd>
+
+                <br>
+
+                <dt>whoami</dt>
+                <dd>Shows the user name of the current user </dd>
+
+                <br>
+
+                <dt>Man, man (command)</dt>
+                <dd>view the manual pages (or view detailed information) on a specific command</dd>
+                <dd>- Press q to quit</dd>
+            </dl>
+
+        </div>
+    </div>
+</body>
+
+</html>
