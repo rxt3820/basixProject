@@ -1,20 +1,8 @@
-html {
-
-    background: #000000;
-    /* fallback for old browsers */
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: white;
-    width: 100%;
-    height: 100%;
-
-}
-
-@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 
 body {
     min-height: 20vh;
-    padding: 10vh 10vw;
+    /*padding: 2vh 3em; */
     color: hsl(0, 100%, 100%);
     font-size: 130%;
 }
@@ -54,23 +42,29 @@ h1 {
 
 .boxes {
     margin: auto;
-    padding: 2em;
-/*    background: #484848;*/
+    padding: 3em;
+    /*    background: #484848;*/
     font-family: 'Fira Code', monospace;
-    border: 3px solid white;
+    border: 0.1875em solid white;
+    min-height: 20vh;
+    padding: 3em 3em;
+    color: hsl(0, 100%, 100%);
+    font-size: 130%;
 }
-p{
+
+p {
     text-align: left;
 }
 
-dt{
+dt {
     text-decoration: underline;
 }
 
-.command{
-    max-width: 35em; 
+.command {
+    max-width: 35em;
     padding-top: 1em;
 }
+
 /*Checkboxes styles*/
 input[type="checkbox"] {
     display: none;
@@ -81,7 +75,7 @@ input[type="checkbox"] + label {
     position: relative;
     padding-left: 2.5em;
     margin-bottom: 2.5em;
-    font: 14px/20px 'Open Sans', Arial, sans-serif;
+    font: 0.875em/1.25em 'Open Sans', Arial, sans-serif;
     color: #ddd;
     cursor: pointer;
     -webkit-user-select: none;
@@ -96,9 +90,9 @@ input[type="checkbox"] + label:last-child {
 input[type="checkbox"] + label:before {
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #4CAF50;
+    width: 1.25em;
+    height: 1.25em;
+    border: 0.0625em solid #4CAF50;
     position: absolute;
     left: 0;
     top: 0;
@@ -108,13 +102,104 @@ input[type="checkbox"] + label:before {
 }
 
 input[type="checkbox"]:checked + label:before {
-    width: 10px;
-    top: -5px;
-    left: 5px;
+    width: 0.625em;
+    top: -0.3125em;
+    left: 0.3125em;
     border-radius: 0;
     opacity: 1;
     border-top-color: transparent;
     border-left-color: transparent;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+
+
+
+
+/************TUTORIAL PAGE CSS*********/
+
+
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 0.625em 1.5625em;
+  
+	background-color: #4CAF10;
+	color: white;
+  
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 0.9375em;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0.9375em;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width:  0.625em;
+	height: 0.125em;
+	border-style: solid;
+	border-width: 0 0.125em 0.125em;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 0.1875em;
+	margin-top: -0.4375em;
+  
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0.25em;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CAF10;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -0.4375em;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -0.9375em;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
 }
