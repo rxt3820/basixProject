@@ -27,13 +27,20 @@ html, body {
   align-items: center;
 }
 
+/**
 #bgimage{
-    background-image: url(assets/background_code.png);
+    background-image: url("background_code.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 25em;
     margin-top: 5em;
+}
+*/
+
+#bgimage {
+    background-image: url('background_code.png');
+    height: 25em;
 }
 
 #term {
@@ -127,10 +134,25 @@ html, body {
   opacity: 0;
   background: none;
   border: 0;
-  color: transparent;
+  color: transparent; 
   position: absolute;
 }
 
 #term-prompt {
   font-size: 1.5em;
+}
+
+#about {
+    padding-bottom: 0.3em;
+}
+#abouttext {
+    font-size: 1.2em;
+}
+
+#bg {
+    position: fixed;
+    left: 30%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 35em;
 }
