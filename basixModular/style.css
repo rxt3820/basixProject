@@ -3,11 +3,31 @@
     padding: 0;
     background-color: black;
     font-family: 'IPM Plex Sans', sans-serif;
+    color: white;
+}
+
+#signupPic, #loginPic {
+    max-width: 13em;
+}
+
+#signupButton, #loginButton {
+    background: none;
+    border: none;
+    padding: 0.4em;
+}
+
+#buttons {
+    text-align: right;
+    padding-top: 1em;
+    padding-right: 2em;
 }
 
 #logo {
     text-align: center;
-    padding-top: 1em;
+}
+
+#logoPic {
+    max-width: 35%;
 }
 
 #nav {
@@ -48,6 +68,23 @@
     max-width: 100%;
 }
 
-body {
-    margin: 3em;
+#background {
+   max-width: 100%; 
 }
+
+#about {
+    padding-bottom: 0.3em;
+}
+
+#abouttext {
+    font-size: 1.2em;
+}
+
+#bg {
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 50%;
+    left: 26%;
+}
+
