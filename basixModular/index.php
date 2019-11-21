@@ -51,7 +51,7 @@
 
   <body>
         <div id= "welcome">     
-            <img id = "background" src = "welcome.png">
+            <img id = "background" src = "assets/welcome.png">
          </div>
             <div id="bg">
                 <p>
