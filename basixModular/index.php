@@ -5,7 +5,7 @@
 
 <?php
         $page = 'home';
-		 require '../dbConnect.inc';  
+		 require 'dbConnect.inc';  
 		$sql = "SELECT content FROM home where page='$page'";
 		$result = $mysqli->query($sql);
 
