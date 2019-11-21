@@ -1,21 +1,4 @@
-<?php 
-$welcomeImage;
-?>
-<? php 
-  $page = 'home';
-		 require 'dbConnect.inc';  
-		$sql = "SELECT ABSLink FROM ModularImages WHERE page='$page'";
-		$result = $mysqli->query($sql);
 
-		if($result->num_rows > 0){
-			//output the data for each row
-			while ($row = $result->FETCH_ASSOC()) {
-				 $welcomeImage = $row['ABSLink'];
-			}
-		}else{
-			echo "0 results";
-		}
-?>
 <?php
 
     include('header.html');
@@ -35,7 +18,7 @@ $welcomeImage;
 		}else{
 			echo "0 results";
 		}
-	?>
+?>
 
 
 	<?php
@@ -55,35 +38,6 @@ $welcomeImage;
 	?>
 
 <?php
-        $page = 'home';
-		 require 'dbConnect.inc';  
-		$sql = "SELECT internalCSS FROM home where page='$page'";
-		$result = $mysqli->query($sql);
-
-		if($result->num_rows > 0){
-			//output the data for each row
-			while ($row = $result->FETCH_ASSOC()) {
-				echo $row['internalCSS'];
-			}
-		}else{
-			echo "0 results";
-		}
-	?>
-
-
-<?php
 
     include('footer.html');
 ?>
-
-<!DOCTYPE html>
-<html>
- <div id= "welcome">     
-  <?php 
-       
-    echo $welcomeImage;
-  ?>
- </div>
-
-
-</html>
