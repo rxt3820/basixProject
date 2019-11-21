@@ -1,8 +1,20 @@
-
-<? php 
-//global variables
+<?php 
 $welcomeImage;
+?>
+<? php 
+  $page = 'home';
+		 require 'dbConnect.inc';  
+		$sql = "SELECT ABSLink FROM ModularImages WHERE page='$page'";
+		$result = $mysqli->query($sql);
 
+		if($result->num_rows > 0){
+			//output the data for each row
+			while ($row = $result->FETCH_ASSOC()) {
+				 $welcomeImage = $row['ABSLink'];
+			}
+		}else{
+			echo "0 results";
+		}
 ?>
 <?php
 
@@ -57,10 +69,21 @@ $welcomeImage;
 			echo "0 results";
 		}
 	?>
-<!DOCTYPE html>
 
 
 <?php
 
     include('footer.html');
 ?>
+
+<!DOCTYPE html>
+<html>
+ <div id= "welcome">     
+  <?php 
+       
+    echo $welcomeImage;
+  ?>
+ </div>
+
+
+</html>
