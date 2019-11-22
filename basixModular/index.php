@@ -1,12 +1,12 @@
 
 <?php
 
-    include('header.html');
+    include('../header.html');
 ?>
 
 <?php
         $page = 'home';
-		 require 'dbConnect.inc';  
+		 require '../dbConnect.inc';  
 		$sql = "SELECT content FROM home where page='$page'";
 		$result = $mysqli->query($sql);
 
@@ -23,7 +23,7 @@
 
 	<?php
         $page = 'home';
-		 require 'dbConnect.inc';  
+		 require '../dbConnect.inc';  
 		$sql = "SELECT internalCSS FROM home where page='$page'";
 		$result = $mysqli->query($sql);
 
@@ -39,5 +39,5 @@
 
 <?php
 
-    include('footer.html');
+    include('../footer.html');
 ?>
