@@ -1,3 +1,7 @@
+<?php
+    include('header.html');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,23 +14,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
-<header>
-
-    <div id="logo">
-        <img src="basixlogo.jpg" alt="basix w: unix">
-    </div>
-
-    <div id="nav">
-        <ul>
-            <li><a href="#"> home </a></li>
-            <li><a href="#"> learn </a></li>
-            <li><a href="#"> quiz </a></li>
-            <li><a href="#"> tutorial </a></li>
-            <li><a href="#"> history </a></li>
-        </ul>
-    </div>
-
-</header>
 
 <body>
     <div class="wrapper">
@@ -36,7 +23,7 @@
             dfjkdbfkjsd fkdjfndakfnad fjkdbf kasfjd fkdbfk
             <br>
             <input type="checkbox" id="box-1">
-            <a src="Untitled-3.html" download="Untitled-3.html" class="buttonDownload" target="_blank" download>
+            <a href="Untitled-3.txt"  class="buttonDownload" target="_blank" download>
                 <label for="box-1">
                 </label>
                 Click to Download</a>
@@ -45,3 +32,6 @@
 </body>
 
 </html>
+<?php
+    include('footer.html');
+?>
