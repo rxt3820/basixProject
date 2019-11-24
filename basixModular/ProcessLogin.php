@@ -5,10 +5,10 @@ $path = './';
 require $path."../../../dbConnect.inc";
 
 session_start();
+$user = trim($_POST['uname']);
 
 if ($mysqli) {
-    if (isset(trim($_POST['uname'])) && isset($_POST['psw'])) {
-    $user = $_POST['uname'];
+    if (isset($user) && isset($_POST['psw'])) {
     $pass = $_POST['psw'];
 
     $query = 'SELECT * FROM LoginForm where user = "'.$_POST['uname'].'" AND password = "'.$_POST['psw'].'"';
@@ -18,7 +18,8 @@ if ($mysqli) {
 
 
         $_SESSION['user'] = $_POST['uname'];
-        header('location:welcome.php');
+        $_SESSION['logged in'] = true;
+        header('location:header2.php');
     }
     else{
         header('location:header.html');
