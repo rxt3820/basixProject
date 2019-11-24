@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+//conflict resovle
 if (isset($_SESSION['user'])) {
 
     echo "Welcome ". $_SESSION['user']. "<br>" ;
