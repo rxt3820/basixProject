@@ -1,108 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
-        <meta charset="utf-8" />
-        <title> page name </title>
-        <link rel = "stylesheet" type = "text/css" href = "style.css">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700&display=swap" rel="stylesheet"> 
-    </head>
-    
+    <meta charset="utf-8" />
+    <title> page name </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
 
-    <header>
-            <div id = "buttons">
-                <button onclick="document.getElementById('id02').style.display='block'" id = "signupButton" type = "submit"><img id = "signupPic" src = "../assets/signup.png"></button>
-                <button onclick="document.getElementById('id01').style.display='block'" id = "loginButton" type = "submit"><img id = "loginPic" src = "../assets/login.png"></button>
+</head>
+
+
+<!--WORKING HEADER FILE-->
+
+<header>
+    <div id="buttons">
+
+        <button onclick="document.getElementById('id02').style.display='block'" id="signupButton" type="submit"><img id="signupPic" src="../assets/signup.png"></button>
+        <button onclick="document.getElementById('id01').style.display='block'" id="loginButton" type="submit"><img id="loginPic" src="../assets/login.png"></button>
+
+        <button onclick="document.getElementById('id02').style.display='block'" id="signupButton" type="submit"><img id="signupPic" src="assets/signup.png"></button>
+        <button onclick="document.getElementById('id01').style.display='block'" id="loginButton" type="submit"><img id="loginPic" src="assets/login.png"></button>
+
+    </div>
+
+    <div id="logo">
+        <img id="logoPic" src="assets/basixlogo.jpg" alt="basix w: unix">
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="#"> home </a></li>
+            <li><a href="#"> learn </a></li>
+            <li><a href="#"> quiz </a></li>
+            <li><a href="#"> tutorial </a></li>
+            <li><a href="#"> history </a></li>
+        </ul>
+    </div>
+
+
+
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="ProcessLogin.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             </div>
 
-           <div id = "logo">
+            <div class="container21">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
 
-                <img id = "logoPic" src = "../assets/basixlogo.jpg" alt = "basix w: unix">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+
             </div>
-        
-            <div id = "nav">
-                <ul>
-                    <li><a href = "http://serenity.ist.rit.edu/~rxt3820/240/240GroupProject/home/index.php"> home </a></li>
-                    <li><a href = "http://serenity.ist.rit.edu/~rxt3820/240/240GroupProject/learn/home.php"> learn </a></li>
-                    <li><a href = "#"> quiz </a></li>
-                    <li><a href = "Tutorial.php"> tutorial </a></li>
-                    <li><a href = "http://serenity.ist.rit.edu/~rxt3820/240/240GroupProject/history/home.php"> history </a></li>
-                </ul>
+
+            <div class="container21" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
             </div>
-        
-
-
-
-        <div id="id01" class="modal">
-
-  <form class="modal-content animate" action="ProcessLogin.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </form>
     </div>
 
-    <div class="container21">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+    <div id="id02" class="modal">
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+        <form class="modal-content animate" action="register.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
 
-      <button type="submit">Login</button>
+            <div class="container21">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="psw2" required>
+
+                <button type="submit">SIGN UP</button>
+
+            </div>
+
+            <div class="container21" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+
+            </div>
+        </form>
     </div>
 
-    <div class="container21" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-    </div>
-  </form>
-</div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
-            <div id="id02" class="modal">
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
-  <form class="modal-content animate" action="register.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-    </div>
+        var modal2 = document.getElementById('id02');
 
-    <div class="container21">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit">SIGN UP</button>
-
-    </div>
-
-    <div class="container21" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-
-    </div>
-  </form>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-var modal2 = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
-</script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
 
 
-    </header>
-    
-</html>
+</header></html>
