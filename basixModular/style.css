@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -94,6 +96,9 @@
     left: 26%;
 }
 
+#wrapper {
+    padding: 3em;
+}
 
 
 /*CSS CODE FOR THE LOGIN BUTTONS */
@@ -223,3 +228,4 @@ span.psw {
         width: 100%;
     }
 }
+

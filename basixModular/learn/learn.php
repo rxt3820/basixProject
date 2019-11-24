@@ -1,37 +1,28 @@
+<?php
+    include('header.html');
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <title>Learn</title>
+    <title>basiX W UniX</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="mainUpdated.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="learn.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
-<header>
-
-    <div id="logo">
-        <img src="../assets/logo.jpg" alt="basix w: unix">
-    </div>
-
-    <div id="nav">
-        <ul>
-            <li><a href="#"> home </a></li>
-            <li><a href="#"> learn </a></li>
-            <li><a href="#"> quiz </a></li>
-            <li><a href="#"> tutorial </a></li>
-            <li><a href="#"> history </a></li>
-        </ul>
-    </div>
-
-</header>
 
 <body>
-    <div class="learnwrapper">
+    <div class="wrapper">
         <!-- have a black background-->
-
+        <br>
+        <br>
+        <br>
         <h1>Getting Started - Mac</h1>
 
         <div class="boxes">
@@ -97,29 +88,30 @@
             <dl>
                 <dt>PWD</dt>
                 <dd> Pwd stands for the Print Working Directory. It prints the route of the working directory, beginning with the root file.</dd>
-                <dd><img class="command" src="pwd_command-01.png"></dd>
+                <dd><img class="command" src="../assets/commands-11.png"></dd>
 
                 <br>
 
                 <dt>cd</dt>
                 <dd>The cd command in Linux is known as the change directory command. It is used to modify the current working directory.</dd>
-
+                <dd><img class="command" src="assets/commands-12.png"></dd>
                 <br>
 
                 <dt>cd/</dt>
                 <dd>This command is used to change the working directory to the root directory. The root directory is the first directory in the hierarchy of your filesystem.</dd>
+                <dd><img class="command" src="assets/commands-13.png"></dd>
 
                 <br>
 
                 <dt>cd~</dt>
                 <dd>This command is used to change the directory to your home directory.</dd>
-
+                <dd><img class="command" src="assets/commands-14.png"></dd>
                 <br>
 
                 <dt>cd..</dt>
                 <dd>This command is used to move to the parent directory of the current directory, or one level up from the current directory. ".." is the parent directory.
                 </dd>
-
+                <dd><img class="command" src="assets/commands-15.png"></dd>
                 <br>
 
                 <dt>Options For Different Commands</dt>
@@ -129,16 +121,41 @@
 
                 <dt>ls</dt>
                 <dd>This command is used to list out the information about the folder or directory data within the file system.</dd>
+                <dd><img class="command" src="assets/commands-16.png"></dd>
 
                 <br>
 
                 <dt>ls -la</dt>
                 <dd>This command is used to list out the information about the folder including the size, modified date and time, file or folder name and owner of the file and its permissions.</dd>
+                <dd><img class="command" src="assets/commands-18.png"></dd>
 
                 <br>
 
                 <dt>rm</dt>
-                <dd>Delets a file.</dd>
+                <dd>This command deletes a file.</dd>
+                <dd><img class="command" src="assets/commands-20.png"></dd>
+
+                <br>
+
+                <dt>mv</dt>
+                <dd>This command renames files can also move files and rename a directory</dd>
+                <dd><img class="command" src="assets/commands-21.png"></dd>
+
+                <br>
+
+                <dt>echo</dt>
+                <dd>Is a command used to display a line of text that is passed as an argument in the command line. Using (\b) removes the spaces between the words, but you must use (-e) right after echo so that the OS knows that it has to interpret the backslashes. For example, <b>“echo -e “Hello \bWorld” prints “HelloWorld”</b>. Using (\n) creates a new line, for example.<b>“echo -e “Hello \nWorld”</b> prints <b>“Hello world”</b>
+                </dd>
+                <dd><img class="command" src="assets/commands-19.png"></dd>
+
+                <br>
+
+                <dt>mkdir</dt>
+                <dd>This command is used to make a new directory in the filesystem
+                    according to its argument. If a file path is given, the new directory will be placed at
+                    the end. Otherwise, it will create a new directory in the current working directory
+                    with the name given.</dd>
+                <dd><img class="command" src="assets/commands-22.png"></dd>
 
             </dl>
         </div>
@@ -146,35 +163,39 @@
         <br><br><br>
         <h1> File Manipulation </h1>
         <div class="boxes">
-            <br>
+
             <dl>
                 <dt>Touch</dt>
                 <dd>Creates or modifies files, updates the timestamp of the file.</dd>
-
+                <dd><img class="command" src="assets/commands-02.png"></dd>
                 <br>
 
                 <dt>Nano</dt>
                 <dd>Makes the terminal act as a command-line text editor.</dd>
+                <dd><img class="command" src="assets/commands-03.png"></dd>
 
                 <br>
 
                 <dt>Chmod</dt>
                 <dd>Changes the permission of file (read, write, execute); permissions can be set through symbolic and numeric notation.</dd>
+                <dd><img class="command" src="assets/commands-04.png"></dd>
             </dl>
         </div>
 
         <br><br><br>
         <h1> More Commands </h1>
         <div class="boxes">
-            <br>
+
             <dl>
                 <dt>clear</dt>
                 <dd>Clears the window of all text in order to make it easier to read the results of your commands.</dd>
+                <dd><img class="command" src="assets/commands-05.png"></dd>
 
                 <br>
 
                 <dt>history</dt>
                 <dd>Shows the previous commands that you typed</dd>
+                <dd><img class="command" src="assets/commands-06.png"></dd>
 
                 <br>
 
@@ -185,6 +206,7 @@
                 </dd>
                 <dd>- --date =“string” (top help represent past dates)
                 </dd>
+                <dd><img class="command" src="assets/commands-07.png"></dd>
 
                 <br>
 
@@ -192,17 +214,22 @@
                 <dd>Converts the text that you have typed to audible speech </dd>
                 <dd>- -v tp help specify the voice to say the command
                 </dd>
+                <dd><img class="command" src="assets/commands-08.png"></dd>
 
                 <br>
 
                 <dt>whoami</dt>
                 <dd>Shows the user name of the current user </dd>
+                <dd><img class="command" src="assets/commands-09.png"></dd>
 
                 <br>
 
-                <dt>Man, man (command)</dt>
-                <dd>view the manual pages (or view detailed information) on a specific command</dd>
+                <dt>Man (command)</dt>
+                <dd>View the manual pages (or view detailed information) on a specific command</dd>
+                <dd>For example type "man ls" and it will show you a manual for how to use the command</dd>
                 <dd>- Press q to quit</dd>
+                <dd><img class="command" src="assets/commands-10.png"></dd>
+
             </dl>
 
         </div>
@@ -210,3 +237,6 @@
 </body>
 
 </html>
+<?php
+    include('footer.html');
+?>
