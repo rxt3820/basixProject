@@ -10,7 +10,9 @@ if (isset($_POST['uname']) && isset($_POST['psw']) && isset($_POST['psw2']) && p
     // $options = ['salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM)];
 
     $stmt = $mysqli->prepare("INSERT INTO LoginForm (user,password) VALUES (?,?) ");
-    $stmt->bind_param("ss",$_POST['uname'],password_hash($_POST['psw'], PASSWORD_DEFAULT)); // hashes the password and prepares the sql statement
+    $stmt->bind_param("ss",$_POST['uname'],$_POST['psw']);
+//    $stmt->bind_param("ss",$_POST['uname'],password_hash($_POST['psw'], PASSWORD_DEFAULT));
+    // hashes the password and prepares the sql statement
     $stmt->execute();
     $stmt->close();
 
