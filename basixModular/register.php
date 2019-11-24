@@ -2,8 +2,10 @@
 
 session_start();
 
+$user = trim($_POST['uname']);
+
     //CHECK IF THE FIELDS ARE FILLED
-if (isset(trim($_POST['uname'])) && isset($_POST['psw']) && isset($_POST['psw2']) && passMatch($_POST['psw'],$_POST['psw2']) ){
+if (isset($user) && isset($_POST['psw']) && isset($_POST['psw2']) && passMatch($_POST['psw'],$_POST['psw2']) ){
 
     $path = './';
     require $path."../../../dbConnect.inc";
