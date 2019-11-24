@@ -22,7 +22,7 @@ function passMatch($str1,$str2){
 
     if (strcmp($str1, $str2) == 0) {
         return true;
-
+//
     }
     else
         return false;
