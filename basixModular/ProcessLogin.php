@@ -7,7 +7,7 @@ require $path."../../../dbConnect.inc";
 session_start();
 
 if ($mysqli) {
-    if (isset($_POST['uname']) && isset($_POST['psw'])) {
+    if (isset(trim($_POST['uname'])) && isset($_POST['psw'])) {
     $user = $_POST['uname'];
     $pass = $_POST['psw'];
 
