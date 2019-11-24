@@ -21,6 +21,9 @@ if (isset($user) && isset($_POST['psw']) && isset($_POST['psw2']) && passMatch($
     $_SESSION['user'] = $_POST['uname']; // to say welcome 'user'
     header('location:welcome.php');
 }
+else{
+     header("location:header.html");
+}
 
 function passMatch($str1,$str2){
 
@@ -29,6 +32,9 @@ function passMatch($str1,$str2){
 
     }
     else
+
+
+
         return false;
 
 
