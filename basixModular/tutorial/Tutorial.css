@@ -1,3 +1,48 @@
+#containerQuiz {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;  
+}
+
+input {
+  display: block;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  color: white;
+  background: #0074D9;
+  padding: 15px 30px;
+  letter-spacing: .5px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* labels for Result */
+#result p {
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.correct {
+  background: #2ECC40;
+}
+
+.wrong {
+  background: #FF4136;
+}
+
+/* end of mini quiz */
+
 .container {
   display: block;
   position: relative;
