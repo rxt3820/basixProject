@@ -19,7 +19,7 @@ if (isset($user) && isset($_POST['psw']) && isset($_POST['psw2']) && passMatch($
     $stmt->close();
 
     $_SESSION['user'] = $_POST['uname']; // to say welcome 'user'
-    header('location:welcome.php');
+    header('location:header2.html');
 }
 else{
      header("location:header.html");
