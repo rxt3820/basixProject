@@ -15,8 +15,8 @@ h1 {
     line-height: 1.5;
     display: inline;
     background-image: linear-gradient(transparent 50%,
-            #4CAF10 50%,
-            #4CAF50 85%,
+            #2BAE66FF 50%,
+            #2BAE66FF 85%,
             transparent 85%,
             transparent 85%);
     background-repeat: no-repeat;
@@ -45,7 +45,9 @@ h1 {
     padding: 3em;
     /*    background: #484848;*/
     font-family: 'Fira Code', monospace;
-    border: 0.1875em solid white;
+    border: 0.1875em solid;
+    border-image-source: linear-gradient(to right, #8CCAC9, #74BEA5, #9ABF7A, #E0AA2E);
+    border-image-slice: 1;
     min-height: 20vh;
     padding: 3em 3em;
     color: hsl(0, 100%, 100%);
