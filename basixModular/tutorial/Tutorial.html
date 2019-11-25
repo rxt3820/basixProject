@@ -142,6 +142,7 @@
 
         Using your terminal please follow along with each step to successfully<br>complete the tutorial and understand how to use the commands your learned:
         <br><br>
+<<<<<<< Updated upstream
         <label class="container">  Type 'cd desktop' into the command terminal
               <input type="checkbox">
               <span class="checkmark"></span>
@@ -214,6 +215,66 @@
               <input type="checkbox"> 
               <span class="checkmark"></span>
             </label>
+=======
+        <input type="checkbox" id="box-21">
+        <label for="box-21"> Type 'cd desktop' into the command terminal
+        </label>
+        <input type="checkbox" id="box-22">
+        <label for="box-22"> Type 'mkdir tutorial' which will make a folder called tutorial
+        </label>
+        <input type="checkbox" id="box-23">
+        <label for="box-23"> Type 'mv Untitled-3.txt ~/Desktop/tutorial' in order to move the directory into the tutorial folder
+        </label>
+        <input type="checkbox" id="box-24">
+        <label for="box-24"> Type 'cd tutorial' This will redirect you into the tutorial folder
+        </label>
+        <input type="checkbox" id="box-25">
+        <label for="box-25"> Type 'mv Untitled-3.txt BasixUnix.txt' this will rename the file to BasixUnix
+
+        </label>
+        <input type="checkbox" id="box-26">
+        <label for="box-26"> In order for you to check that this worked type 'ls *.txt' if the file BasixUnix displayed <br>it was done correctly. If it was not done correctly go back to the previous step and try again.
+
+        </label>
+        <input type="checkbox" id="box-27">
+        <label for="box-27">Type 'mkdir changesToFile' which will make a new folder called changesToFile
+
+        </label>
+        <input type="checkbox" id="box-28">
+        <label for="box-28"> Type 'cp BasixUnix.txt ChangedBasixUnix.txt' this will create a copy of the file named ChangedBasicUnix
+        </label>
+        <input type="checkbox" id="box-29">
+        <label for="box-29">Type 'mv ChangedBasixUnix ~/tutorial/changesToFile' to move the txt file into the newly made folder
+        </label>
+        <input type="checkbox" id="box-30">
+        <label for="box-30">Now move into that the folder changesToFile by typing 'cd changesToFile'
+        </label>
+        <input type="checkbox" id="box-31">
+        <label for="box-31"> Let's say you accidently changed directories into the wrong folder and do not know where you are in your file system<br> type the command 'ls' in order to see all the information about the folder.
+        </label>
+        <input type="checkbox" id="box-32">
+        <label for="box-32"> If you ever go too far into a different folder you did not want to be in try typing 'cd..' now you should be back in<br>the tutorial folder only and no longer in the changesToFile folder.
+        </label>
+        <input type="checkbox" id="box-33">
+        <label for="box-33"> Now go back into the changesToFile folder by using the command 'cd changesToFile'
+        </label>
+        <input type="checkbox" id="box-34">
+        <label for="box-34"> Now we will start looking at file permissions. In order to look at the file permission of a file type 'ls -l'
+        </label>
+        <input type="checkbox" id="box-35">
+        <label for="box-35"> Now in order to allow yourself to access and modify the file you are going to want the file permission to be 777 do this<br> by typing 'chmod 777/ChangedBasixUnix.txt'
+        </label>
+        <input type="checkbox" id="box-36">
+        <label for="box-36"> Now you are able to access and modify the file so type 'nano ChangedBasicUnix.txt'
+        </label>
+        <input type="checkbox" id="box-37">
+        <label for="box-37"> Type in whatever message you want into this file then press 'Ctl+x' to exit and 'Ctl+Y' to save changes
+        </label>
+        <input type="checkbox" id="box-38">
+        <label for="box-38">  Type 'echo "$(&lt;changedBaixUnix)"'in order to see the file printed in the command terminal
+            <!--needs to say echo "$(<changedBasixUnix.txt )" -->
+        </label>
+>>>>>>> Stashed changes
         <br><br>
         You have now finished the tutorial Congratulations! Feel free to try the tutorial again to practice<br>and if you feel confident enough please proceed to take the quizes on the quiz page. 
     </div> <!-- end of boxes -->
