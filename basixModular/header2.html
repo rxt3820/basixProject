@@ -16,7 +16,7 @@
     <div id="buttons">
 
         <button onclick="document.getElementById('id01').style.display='block'" id="loginButton" type="submit"><img id="loginPic" src="assets/logout.png"></button>
-<!--        click this to run logout.php-->
+
 
     </div>
 
@@ -34,6 +34,53 @@
         </ul>
     </div>
 
+
+
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="logouts.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container21">
+
+                <h1>Are you sure you want to logout?</h1>
+
+
+            </div>
+
+            <div class="container21" style="background-color:#f1f1f1">
+                <span class="psw"><button class="cancelbtn2"  type="submit">Yes</button></span>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        var modal2 = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
 
 
 </header></html>

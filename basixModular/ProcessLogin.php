@@ -21,7 +21,7 @@ if ($mysqli) {
 
         $_SESSION['user'] = $_POST['uname'];
         $_SESSION['loggedIn'] = true;
-        header('location:welcome.php');
+        header('location:header2.html');
     }
     else{
         header('location:header.html');
