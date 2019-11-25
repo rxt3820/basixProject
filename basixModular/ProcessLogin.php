@@ -5,7 +5,9 @@ $path = './';
 require $path."../../../dbConnect.inc";
 
 session_start();
+
 $user = trim($_POST['uname']);
+$_SESSION['loggedIn'] = false;
 
 if ($mysqli) {
     if (isset($user) && isset($_POST['psw'])) {
@@ -19,7 +21,7 @@ if ($mysqli) {
 
         $_SESSION['user'] = $_POST['uname'];
         $_SESSION['loggedIn'] = true;
-        header('location:header2.php');
+        header('location:welcome.php');
     }
     else{
         header('location:header.html');
