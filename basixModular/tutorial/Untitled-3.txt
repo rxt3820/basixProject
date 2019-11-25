@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>download</title>
-    <meta charset="UTF-8">
-    </head>
-</html>
+If you have made it this far in the tutorial congratulations! 
+
+This means the next step is for you to edit this text file. 
+
+Please feel free to write what you want. Maybe tell us how you felt about this tutorial.
+

@@ -7,26 +7,24 @@
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="Tutorial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href=".../style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
-<header>
+<div id="logo">
+    <img src="basixlogo.jpg" alt="basix w: unix">
+</div>
 
-    <div id="logo">
-        <img src="basixlogo.jpg" alt="basix w: unix">
-    </div>
+<div id="nav">
+    <ul>
+        <li><a href="#"> home </a></li>
+        <li><a href="#"> learn </a></li>
+        <li><a href="#"> quiz </a></li>
+        <li><a href="#"> tutorial </a></li>
+        <li><a href="#"> history </a></li>
+    </ul>
+</div>
 
-    <div id="nav">
-        <ul>
-            <li><a href="#"> home </a></li>
-            <li><a href="#"> learn </a></li>
-            <li><a href="#"> quiz </a></li>
-            <li><a href="#"> tutorial </a></li>
-            <li><a href="#"> history </a></li>
-        </ul>
-    </div>
 
-</header>
 
 <div id="wrapper">
     <h1>Tutorial</h1>
@@ -36,99 +34,88 @@
 
         <h2> Setting up your environment </h2> <br> <br>
         If you are a Macbook User (Unix/Linux is already accesible to you): <br><br>
-            <label class="container">  You can find the terminal by going to your utilities folder then selecting the terminal. 
-                <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  When you open your terminal you will first see the last login on your account as well<br> as the prompt which ends in a dollar sign($).
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Now you are all set up to use Linux and practice some commands that you will see soon. 
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
+        <input type="checkbox" id="box-1">
+        <label for="box-1"> You can find the terminal by going to your utilities folder then selecting the terminal.
+        </label>
+        <input type="checkbox" id="box-2">
+        <label for="box-2"> When you open your terminal you will first see the last login on your account as well<br> as the prompt which ends in a dollar sign($).
+        </label>
+        <input type="checkbox" id="box-3">
+        <label for="box-3"> Now you are all set up to use Linux and practice some commands that you will see soon.
+        </label>
         <br><br>
         If you are a Windows User (Unix/Linux is not already accesible to you): <br><br>
-            <label class="container">  Go to settings in Windows 10 
-                <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  On the left, you will see for developers click on that button
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Now click the button Developer mode, this will take a few mins to install
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Open your control panel
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Click on programs
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Then click turn windows features on or off
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Scroll down to Windows Subsystem for Linux and check the box and hit okay
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Once this is done you will have to click restart to restart your computer with the new software
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Once your computer is restarted then search for bash on your computer
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Your command terminal will display a message that you need an installed distribution, so open the windows store
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  In the store search for ubuntu
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Click on ubuntu and install it
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Once it is installed click the launch button
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  It will ask you to create a new Unix username so type that in
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Then enter a custom password
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Now once that is done you are in Linux
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">  Now you are ready to continue to more tutorials have fun!
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <br>
-            Once your environment is set up download this file for the rest of the tutorial:
+        <input type="checkbox" id="box-4">
+        <label for="box-4"> Go to settings in Windows 10
+        </label>
+        <input type="checkbox" id="box-5">
+        <label for="box-5"> On the left, you will see for developers click on that button
+
+        </label>
+        <input type="checkbox" id="box-6">
+        <label for="box-6"> Now click the button Developer mode, this will take a few mins to install
+        </label>
+        <input type="checkbox" id="box-7">
+        <label for="box-7"> Open your control panel
+        </label>
+        <input type="checkbox" id="box-8">
+        <label for="box-8"> Click on programs
+
+        </label>
+        <input type="checkbox" id="box-9">
+        <label for="box-9"> Then click turn windows features on or off
+        </label>
+        <input type="checkbox" id="box-10">
+        <label for="box-10"> Scroll down to Windows Subsystem for Linux and check the box and hit okay
+        </label>
+        <input type="checkbox" id="box-11">
+        <label for="box-11"> Once this is done you will have to click restart to restart your computer with the new software
+        </label>
+        <input type="checkbox" id="box-12">
+        <label for="box-12"> Once your computer is restarted then go to windows store and search for ubuntu
+        </label>
+
+        <input type="checkbox" id="box-13">
+        <label for="box-15">Click on ubuntu and install it
+        </label>
+
+        <input type="checkbox" id="box-14">
+        <label for="box-16"> Once it is installed click the launch button
+        </label>
+
+        <input type="checkbox" id="box-15">
+        <label for="box-17"> It will ask you to create a new Unix username so type that in
+        </label>
+
+        <input type="checkbox" id="box-16">
+        <label for="box-18"> Then enter a custom password
+        </label>
+
+        <input type="checkbox" id="box-17">
+        <label for="box-19"> Now once that is done you are in Linux
+        </label>
+
+        <input type="checkbox" id="box-18">
+        <label for="box-19"> type in the changing directory command in order to direct to the desktop 'cd /mnt/c/users/ComputerUsername/Desktop'
+        </label>
+
+        <input type="checkbox" id="box-19">
+        <label for="box-19"> Type the previous command out and replace ComputerUsername with whatever your username is and press enter
+        </label>
+
+        <input type="checkbox" id="box-20">
+        <label for="box-20"> Now you are ready to continue to more tutorials have fun!
+        </label>
+        <br>
+        Once your environment is set up download this file for the rest of the tutorial:
         <br><br>
 
 
 
-        <input type="checkbox" id="box-1">
-        <a src="Untitled-3.txt" download="Untitled-3.txt" class="buttonDownload" target="_blank" download>
-            <label for="box-1">
-            </label>
-            Click to Download</a>
+        <a href="Untitled-3.txt"  class="buttonDownload" target="_blank" download>
+                <label for="box-1">
+                </label>
+                Click to Download</a>
         <br><br>
         Download the file and place it on your desktop. Once this is done open your<br>command terminal that you were able to open based on the instructions above<br>
         and get ready for the commands you will be using in the next step to this tutorial. <br><br>
@@ -142,80 +129,6 @@
 
         Using your terminal please follow along with each step to successfully<br>complete the tutorial and understand how to use the commands your learned:
         <br><br>
-<<<<<<< Updated upstream
-        <label class="container">  Type 'cd desktop' into the command terminal
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Type 'mkdir tutorial' which will make a folder called tutorial
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Type 'mv Untitled-3.txt ~/Desktop/tutorial' in order to move the directory into the tutorial folder
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Type 'cd tutorial' This will redirect you into the tutorial folder
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Type 'mv Untitled-3.txt BasixUnix.txt' this will rename the file to BasixUnix
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  In order for you to check that this worked type 'ls *.txt' if the file BasixUnix displayed <br>it was done correctly. If it was not done correctly go back to the previous step and try again. 
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Type 'mkdir changesToFile' which will make a new folder called changesToFile
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  
-              <input type="checkbox"> Type 'cp BasixUnix.txt ChangedBasixUnix.txt' this will create a copy of the file named ChangedBasicUnix
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  
-              <input type="checkbox"> Type 'mv ChangedBasixUnix ~/tutorial/changesToFile' to move the txt file into the newly made folder
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  
-              <input type="checkbox"> Now move into that the folder changesToFile by typing 'cd changesToFile'
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  
-              <input type="checkbox"> Let's say you accidently changed directories into the wrong folder and do not know where you are in your file system<br> type the command 'ls' in order to see all the information about the folder.
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  If you ever go too far into a different folder you did not want to be in try typing 'cd..' now you should be back in<br>the tutorial folder only and no longer in the changesToFile folder.
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Now go back into the changesToFile folder by using the command 'cd changesToFile'
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Now we will start looking at file permissions. In order to look at the file permission of a file type 'ls -l' 
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Now in order to allow yourself to access and modify the file you are going to want the file permission to be 777 do this<br> by typing 'chmod 777/ChangedBasixUnix.txt'
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Now you are able to access and modify the file so type 'nano ChangedBasicUnix.txt'
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Type in whatever message you want into this file then press 'Ctl+x' to exit and 'Ctl+Y' to save changes
-              <input type="checkbox"> 
-              <span class="checkmark"></span>
-            </label>
-        <label class="container">  Type 'echo "$(&lt;changedBaixUnix)"'in order to see the file printed in the command terminal <!--needs to say echo "$(<changedBasixUnix.txt )" -->
-              <input type="checkbox"> 
-              <span class="checkmark"></span>
-            </label>
-=======
         <input type="checkbox" id="box-21">
         <label for="box-21"> Type 'cd desktop' into the command terminal
         </label>
@@ -272,11 +185,10 @@
         </label>
         <input type="checkbox" id="box-38">
         <label for="box-38">  Type 'echo "$(&lt;changedBaixUnix)"'in order to see the file printed in the command terminal
-            <!--needs to say echo "$(<changedBasixUnix.txt )" -->
         </label>
->>>>>>> Stashed changes
         <br><br>
-        You have now finished the tutorial Congratulations! Feel free to try the tutorial again to practice<br>and if you feel confident enough please proceed to take the quizes on the quiz page. 
+        You have now finished the tutorial Congratulations! Feel free to try the tutorial again to practice<br>and if you feel confident enough please proceed to take the quizes on the quiz page.
     </div> <!-- end of boxes -->
 </div> <!-- end of wrapper -->
-</html> 
+
+</html>
