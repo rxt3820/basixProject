@@ -1,8 +1,7 @@
 <?php
 
 // This checks if the user exists or not
-$path = './';
-require $path."../../../dbConnect.inc";
+require "../dbConnect.inc";
 
 session_start();
 
