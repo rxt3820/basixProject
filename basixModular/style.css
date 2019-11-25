@@ -33,16 +33,27 @@
 }
 
 nav {
-    position: absolute;
-    top: 40%;
+    position: sticky;
     padding: 3em;
     width: 70em;
     display: table;
     transform: translateY(-100%);
     transform: translateX(9%);
-    padding: 0.3em;
+    padding: 0.2em;
 }
 
+.sticky {
+    position: fixed;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    top: .009em;
+    width: 100%;
+    z-index: 2;
+}
+
+.sticky + .content {
+    padding-top: 3.75em;
+}
 nav a {
     position: relative;
     display: table-cell;
