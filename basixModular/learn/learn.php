@@ -6,17 +6,6 @@
 
 <html>
 
-<head>
-    <title>basiX W UniX</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <link rel="stylesheet" href="mainUpdated.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="learn.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
 <body>
     <div class="wrapper">
         <!-- have a black background-->
@@ -88,7 +77,7 @@
             <dl>
                 <dt>PWD</dt>
                 <dd> Pwd stands for the Print Working Directory. It prints the route of the working directory, beginning with the root file.</dd>
-                <dd><img class="command" src="../assets/commands-11.png"></dd>
+                <dd><img class="command" src="assets/commands-11.png"></dd>
 
                 <br>
 

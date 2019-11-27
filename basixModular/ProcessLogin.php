@@ -1,14 +1,15 @@
 <?php
 
 // This checks if the user exists or not
-$path = './';
-require $path."../../../dbConnect.inc";
+require "../dbConnect.inc";
 
 session_start();
 
+$user = trim($_POST['uname']);
+$_SESSION['loggedIn'] = false;
+
 if ($mysqli) {
-    if (isset($_POST['uname']) && isset($_POST['psw'])) {
-    $user = $_POST['uname'];
+    if (isset($user) && isset($_POST['psw'])) {
     $pass = $_POST['psw'];
 
     $query = 'SELECT * FROM LoginForm where user = "'.$_POST['uname'].'" AND password = "'.$_POST['psw'].'"';
@@ -18,7 +19,8 @@ if ($mysqli) {
 
 
         $_SESSION['user'] = $_POST['uname'];
-        header('location:welcome.php');
+        $_SESSION['loggedIn'] = true;
+        header('location:header2.html');
     }
     else{
         header('location:header.html');

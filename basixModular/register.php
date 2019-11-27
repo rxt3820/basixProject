@@ -2,20 +2,27 @@
 
 session_start();
 
+$user = trim($_POST['uname']);
+
     //CHECK IF THE FIELDS ARE FILLED
-if (isset($_POST['uname']) && isset($_POST['psw']) && isset($_POST['psw2']) && passMatch($_POST['psw'],$_POST['psw2']) ){
+if (isset($user) && isset($_POST['psw']) && isset($_POST['psw2']) && passMatch($_POST['psw'],$_POST['psw2']) ){
 
     $path = './';
-    require $path."../../../dbConnect.inc";
+    require $path."../dbConnect.inc";
     // $options = ['salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM)];
 
     $stmt = $mysqli->prepare("INSERT INTO LoginForm (user,password) VALUES (?,?) ");
-    $stmt->bind_param("ss",$_POST['uname'],password_hash($_POST['psw'], PASSWORD_DEFAULT)); // hashes the password and prepares the sql statement
+    $stmt->bind_param("ss",$_POST['uname'],$_POST['psw']);
+//    $stmt->bind_param("ss",$_POST['uname'],password_hash($_POST['psw'], PASSWORD_DEFAULT));
+    // hashes the password and prepares the sql statement
     $stmt->execute();
     $stmt->close();
 
     $_SESSION['user'] = $_POST['uname']; // to say welcome 'user'
-    header('location:welcome.php');
+    header('location:header2.html');
+}
+else{
+     header("location:header.html");
 }
 
 function passMatch($str1,$str2){
@@ -25,6 +32,9 @@ function passMatch($str1,$str2){
 //
     }
     else
+
+
+
         return false;
 
 
