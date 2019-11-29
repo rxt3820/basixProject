@@ -9,6 +9,27 @@
 
 </head>
 <script>
+
+
+
+    $(function() {
+  $( "#button" ).click(function() {
+    $( "#button" ).addClass( "onclic", 250, validate);
+  });
+
+  function validate() {
+    setTimeout(function() {
+      $( "#button" ).removeClass( "onclic" );
+      $( "#button" ).addClass( "validate", 450, callback );
+    }, 2250 );
+  }
+    function callback() {
+      setTimeout(function() {
+        $( "#button" ).removeClass( "validate" );
+      }, 1250 );
+    }
+  });
+
             window.onscroll = function() {
                 myFunction()
             };
@@ -69,7 +90,11 @@
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button type="submit">Login</button>
+<!--                <div class="container01">-->
+  <button type="submit" class ="ew" id="button"></button>
+<!--</div>-->
+
+<!--                <button type="submit">Login</button>-->
 
             </div>
 
