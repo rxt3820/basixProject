@@ -1,9 +1,11 @@
+/*Change all px to em */
+
 #containerQuiz {
   width: 80%;
   margin: 0 auto;
   background: #fff;
-  padding: 20px;
-  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+  padding: 1em;
+/*  box-shadow: 0 3px 3px rgba(0,0,0,0.2);*/
 }
 
 label {
@@ -21,9 +23,7 @@ input {
   border: 0;
   color: white;
   background: #0074D9;
-  padding: 15px 30px;
-  letter-spacing: .5px;
-  font-family: 'Roboto Slab', serif;
+  padding: 0.5em;
 }
 
 /* labels for Result */
@@ -98,7 +98,7 @@ input {
   display: block;
 }
 
-/* Style the checkmark/indicator */
+/* Style the checkmark/indicator -- change px to em!!!*/ 
 #wrapper .checkmark:after {
   left: 9px;
   top: 5px;
@@ -111,6 +111,7 @@ input {
   transform: rotate(45deg);
 }
 
+/* php will have an external css for the wrapper */
 #wrapper {
     min-height: 20vh;
     /*padding: 2vh 3em; */
