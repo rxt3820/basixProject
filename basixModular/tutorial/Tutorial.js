@@ -1,27 +1,33 @@
-console.log("tutorial.js has loaded");
+(function(window, document) {
+  window.onload = init;
+  function getResult() {
+    var answer1 = document.getElementById("q1").value;
+    var answer2 = document.getElementById("q2").value;
+    var result1 = document.getElementById("result1");
+    var result2 = document.getElementById("result2");
 
-let result = document.getElementById("result");
-let submit = document.getElementById("submit");
-
-function getResult() {
-  let answer1 = document.getElementById("q1").value;
-  let answer2 = document.getElementById("q2").value;
-
-  console.log("answer1", answer1, "answer2", answer2);
-
-  if (answer1 == "0") {
-    result.innerHTML = '<p class="correct">You got the answer!</p>';
-  } else {
-    result.innerHTML = '<p class="wrong">Sorry try again!</p>';
+    if (answer1.length) {
+      if (answer1 == "0") {
+        result1.innerHTML = '<p class="correct">You got the answer!</p>';
+      } else {
+        result1.innerHTML = '<p class="wrong">Sorry try again!</p>';
+      }
+    } else {
+      result1.innerHTML = '<p class="wrong">This field is required.</p>';
+    }
+    if (answer2.length) {
+      if (answer2 == "222") {
+        result2.innerHTML = '<p class="correct">You got the answer!</p>';
+      } else {
+        result2.innerHTML = '<p class="wrong">Sorry try again!</p>';
+      }
+    } else {
+      result2.innerHTML = '<p class="wrong">This field is required.</p>';
+    }
   }
+  function init() {
+    var submit = document.getElementById("submit");
 
-  if (answer2 == "222") {
-    result.innerHTML = '<p class="correct">You got the answer!</p>';
-  } else {
-    result.innerHTML = '<p class="wrong">Sorry try again!</p>';
+    submit.addEventListener("click", getResult);
   }
-}
-
-if (submit && submit.length) {
-  submit.addEventListener("click", getResult());
-}
+})(window, document);

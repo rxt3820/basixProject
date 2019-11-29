@@ -19,7 +19,6 @@
   <div id="logo">
     <img src="basixlogo.jpg" alt="basix w: unix" />
   </div>
-
   <div id="nav">
     <ul>
       <li><a href="#"> home </a></li>
@@ -29,12 +28,10 @@
       <li><a href="#"> history </a></li>
     </ul>
   </div>
-
   <div id="wrapper">
     <h1>Tutorial</h1>
     <div id="boxes">
       <!-- Part 1 of tutorial -->
-
       <h2>Setting up your environment</h2>
       <br />
       <br />
@@ -45,14 +42,12 @@
         You can find the terminal by going to your utilities folder then
         selecting the terminal.
       </label>
-
       <input type="checkbox" id="box-2" />
       <label for="box-2">
         When you open your terminal you will first see the last login on your
         account as well<br />
         as the prompt which ends in a dollar sign($).
       </label>
-
       <input type="checkbox" id="box-3" />
       <label for="box-3">
         Now you are all set up to use Linux and practice some commands that you
@@ -61,30 +56,23 @@
       <br /><br />
       If you are a Windows User (Unix/Linux is not already accesible to you):
       <br /><br />
-
       <input type="checkbox" id="box-4" />
       <label for="box-4"> Go to settings in Windows 10 </label>
-
       <input type="checkbox" id="box-5" />
       <label for="box-5">
         On the left, you will see for developers click on that button
       </label>
-
       <input type="checkbox" id="box-6" />
       <label for="box-6">
         Now click the button Developer mode, this will take a few mins to
         install
       </label>
-
       <input type="checkbox" id="box-7" />
       <label for="box-7"> Open your control panel </label>
-
       <input type="checkbox" id="box-8" />
       <label for="box-8"> Click on programs </label>
-
       <input type="checkbox" id="box-9" />
       <label for="box-9"> Then click turn windows features on or off </label>
-
       <input type="checkbox" id="box-10" />
       <label for="box-10">
         Scroll down to Windows Subsystem for Linux and check the box and hit
@@ -100,36 +88,28 @@
         Once your computer is restarted then go to windows store and search for
         ubuntu
       </label>
-
       <input type="checkbox" id="box-13" />
       <label for="box-13">Click on ubuntu and install it </label>
-
       <input type="checkbox" id="box-14" />
       <label for="box-14"> Once it is installed click the launch button </label>
-
       <input type="checkbox" id="box-15" />
       <label for="box-15">
         It will ask you to create a new Unix username so type that in
       </label>
-
       <input type="checkbox" id="box-16" />
       <label for="box-16"> Then enter a custom password </label>
-
       <input type="checkbox" id="box-17" />
       <label for="box-17"> Now once that is done you are in Linux </label>
-
       <input type="checkbox" id="box-18" />
       <label for="box-18">
         type in the changing directory command in order to direct to the desktop
         'cd /mnt/c/users/ComputerUsername/Desktop'
       </label>
-
       <input type="checkbox" id="box-19" />
       <label for="box-19">
         Type the previous command out and replace ComputerUsername with whatever
         your username is and press enter
       </label>
-
       <input type="checkbox" id="box-20" />
       <label for="box-20">
         Now you are ready to continue to more tutorials have fun!
@@ -138,7 +118,6 @@
       Once your environment is set up download this file for the rest of the
       tutorial:
       <br /><br />
-
       <a href="Untitled-3.txt" class="buttonDownload" target="_blank" download>
         <label for="box-1"> </label>
         Click to Download</a
@@ -152,14 +131,11 @@
     </div>
     <!-- end of boxes -->
     <br /><br />
-
     <div id="boxes">
       <!-- Part 2 of tutorial -->
-
       <h2>Introduction Commands</h2>
       <br />
       <br />
-
       Using your terminal please follow along with each step to successfully<br />complete
       the tutorial and understand how to use the commands your learned:
       <br /><br />
@@ -189,14 +165,11 @@
         BasixUnix displayed <br />it was done correctly. If it was not done
         correctly go back to the previous step and try again.
       </label>
-
       <!-- try checking if it works while on the server  That might be the problem-->
       <label for="q1"> What is the size of the folder?&nbsp;&nbsp;</label>
       <input type="text" id="q1" />
-      <div id="result"><p></p></div>
+      <div id="result1" class="result"><p></p></div>
       <br />
-      <button id="submit">Submit to Check</button>
-
       <input type="checkbox" id="box-27" />
       <label for="box-27"
         >Type 'mkdir changesToFile' which will make a new folder called
@@ -240,14 +213,13 @@
         Now we will start looking at file permissions. In order to look at the
         file permission of a file type 'ls -l'
       </label>
-
       <label for="q2"
         >What are the file permissions of the ChangedBasixUnix.txt
         file?&nbsp;&nbsp;</label
       >
       <input type="text" id="q2" />
+      <div id="result2" class="result"><p></p></div>
       <br /><br /><br />
-
       <input type="checkbox" id="box-35" />
       <label for="box-35">
         Now in order to allow yourself to access and modify the file you are
@@ -269,6 +241,8 @@
         Type 'echo "$(&lt;changedBaixUnix)"'in order to see the file printed in
         the command terminal
       </label>
+      <br />
+      <button id="submit">Submit to Check</button>
       <br /><br />
       You have now finished the tutorial Congratulations! Feel free to try the
       tutorial again to practice<br />and if you feel confident enough please
