@@ -7,7 +7,6 @@ $user = trim($_POST['uname']);
     //CHECK IF THE FIELDS ARE FILLED
 if (isset($user) && isset($_POST['psw']) && isset($_POST['psw2']) && passMatch($_POST['psw'],$_POST['psw2']) ){
 
-    $path = './';
     require $path."../dbConnect.inc";
     // $options = ['salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM)];
 
