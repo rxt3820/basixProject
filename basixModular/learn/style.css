@@ -3,43 +3,7 @@
     padding: 0;
     background-color: black;
     font-family: 'IPM Plex Sans', sans-serif;
-}
-
-#logo {
-    text-align: center;
-    padding-top: 1em;
-}
-
-#nav {
-    border-bottom: solid 0.7px white;
-    padding: 0.2em;
-}
-
-#nav ul {
-    list-style: none;
-    text-align: center; 
-    padding-bottom: 0.5em;
-}
-
-#nav li {
-    display: inline-block;
-}
-
-#nav li a {
-    text-decoration: none;
-    display: block;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 0.5em;
-    font-size: 1.5em;
-    font-weight: 300;
     color: white;
-}
-
-#nav li a:hover {
-    font-weight: 500; 
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px;
 }
 
 #footer {
@@ -48,6 +12,439 @@
     max-width: 100%;
 }
 
-body {
+#background {
+    max-width: 100%;
+}
+
+#about {
+    padding-bottom: 0.3em;
+}
+
+#abouttext {
+    font-size: 1.2em;
+}
+
+#bg {
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 50%;
+    left: 26%;
+}
+
+#wrapper {
+    padding: 3em;
     margin: 3em;
 }
+
+
+/*CSS CODE FOR THE LOGIN BUTTONS */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+#signupPic,
+#loginPic {
+    max-width: 13em;
+}
+
+#signupButton,
+#loginButton {
+    background: none;
+    border: none;
+    padding: 0.4em;
+}
+
+#buttons {
+    text-align: right;
+    padding-top: 1em;
+    padding-right: 2em;
+    z-index: 2;
+    outline: none;
+}
+
+.button {
+    z-index: 2;
+    outline: none;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logoPic {
+    max-width: 35%;
+}
+
+nav {
+    position: sticky;
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.2em;
+}
+
+.sticky {
+    position: fixed;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    top: .009em;
+    width: 100%;
+    z-index: 2;
+}
+
+.sticky + .content {
+    padding-top: 3.75em;
+}
+
+nav a {
+    position: relative; 
+    text-align: center;
+    color: #949494;
+    text-decoration: none;
+    font-family: 'IPM Plex Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 0.625em 3em;
+    transition: 0.2s ease color;
+}
+
+nav a:before,
+nav a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav a:before {
+    top: 0;
+    left: 0.625em;
+    width: 0.375em;
+    height: 0.375em;
+}
+
+nav a:after {
+    top: 0.3125em;
+    left: 1.125em;
+    width: 0.25em;
+    height: 0.25em;
+}
+
+nav a:nth-child(1):before {
+    left: 31%;
+    background-color: yellow;
+}
+
+nav a:nth-child(1):after {
+    left: 35%;
+    background-color: red;
+}
+
+nav a:nth-child(2):before {
+    left: 31%;
+    background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after {
+    left: 35%;
+    background-color: #89ff00;
+}
+
+nav a:nth-child(3):before {
+    left: 32%;
+    background-color: #a44ce6;
+}
+
+nav a:nth-child(3):after {
+    left: 36%;
+    background-color: #ffa6c9;
+}
+
+nav a:nth-child(4):before {
+    left: 28%;
+    background-color: #0099ff;
+}
+
+nav a:nth-child(4):after {
+    left: 32%;
+    background-color: #E10600FF;
+}
+
+nav a:nth-child(5):before {
+    left: 28%;
+    background-color: #f0810f;
+}
+
+nav a:nth-child(5):after {
+    left: 32%;
+    background-color: #406784;
+}
+
+#indicator {
+    position: absolute;
+    left: 7%;
+    bottom: 0;
+    width: 4em;
+    height: 0.1975em;
+    border-radius: 0.3125em;
+    transition: 0.2s ease left;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+nav a:active {
+    font-weight: 600;
+
+}
+
+nav a:hover:before,
+nav a:hover:after {
+    transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator {
+    left: 10%;
+    background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator {
+    left: 28.3%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator {
+    left: 46%;
+    background: linear-gradient(130deg, #a44ce6, #ffa6c9);
+}
+
+nav a:nth-child(4):hover ~ #indicator {
+    left: 62.6%;
+    background: linear-gradient(130deg, #0099ff, #E10600FF);
+}
+
+nav a:nth-child(5):hover ~ #indicator {
+    left: 81.5%;
+    background: linear-gradient(130deg, #f0810f, #406784);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+}
+
+#background {
+    max-width: 100%;
+}
+
+#about {
+    padding-bottom: 0.3em;
+}
+
+#abouttext {
+    font-size: 1.2em;
+}
+
+#bg {
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 50%;
+    left: 26%;
+}
+
+
+/*CSS CODE FOR THE LOGIN BUTTONS */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.cancelbtn2 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #4CAF50;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container21 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* media Queries */
+@media (max-width: 900px) {
+
+    .button {
+        display: block;
+        margin: 0 auto;
+        align-content: center;
+    }
+    nav {
+        display: none;
+    }
+
+}
+
+@media (max-width: 435px) {
+    
+    
+
+}
+
