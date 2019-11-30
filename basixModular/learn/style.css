@@ -114,7 +114,7 @@ span.psw {
 
 nav {
     position: sticky;
-  
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -135,7 +135,7 @@ nav {
 }
 
 nav a {
-    position: relative; 
+    position: relative;
     text-align: center;
     color: #949494;
     text-decoration: none;
@@ -436,15 +436,18 @@ span.psw {
         margin: 0 auto;
         align-content: center;
     }
+
     nav {
         display: none;
     }
 
+    
 }
 
-@media (max-width: 435px) {
-    
-    
+@media (max-width: 625px) {
+
+    img.command {
+        display: none;
+    }
 
 }
-
