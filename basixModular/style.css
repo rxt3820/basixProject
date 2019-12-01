@@ -101,12 +101,12 @@
 }
 
 #signupPic,
-#loginPic {
+#loginPic,#profilePic  {
     max-width: 13em;
 }
 
 #signupButton,
-#loginButton {
+#loginButton ,#profilePic {
     background: none;
     border: none;
     outline: none;
@@ -413,6 +413,10 @@ span.psw {
     animation: animatezoom 0.6s
 }
 
+/*CSS FOR PROFILE PIC*/
+#profileLink{
+    
+}
 @-webkit-keyframes animatezoom {
     from {
         -webkit-transform: scale(0)
@@ -449,7 +453,7 @@ span.psw {
 @media (min-width: 900px) {
 
     #signupButton,
-    #loginButton {
+    #loginButton,{
         align-content: center;
     }
 
