@@ -114,3 +114,9 @@ input[type="checkbox"]:checked + label:before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+@media (max-width: 625px) {
+
+    img.command {
+        display: none;
+    }
+}
