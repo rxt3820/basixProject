@@ -20,8 +20,9 @@ if (!empty($user) && !empty($pass) && !empty($_POST['psw2']) && passMatch($pass,
 
     $_SESSION['user'] = $user; // add user to session array
     $_SESSION['loggedIn'] = true;
-    echo "Session variables are set.";
     header('location:../profile/home.php');
+    print_r($_SERVER);
+
 }
 else{
      header("location:../home/home.php");
