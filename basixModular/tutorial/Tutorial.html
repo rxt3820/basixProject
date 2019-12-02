@@ -1,253 +1,294 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Tutorial</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0" />
-    <link rel="stylesheet" href="Tutorial.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap"
-      rel="stylesheet"
-    />
-    <script type="text/javascript" src="Tutorial.js"></script>
-  </head>
-  <div id="logo">
-    <img src="basixlogo.jpg" alt="basix w: unix" />
-  </div>
-  <div id="nav">
-    <ul>
-      <li><a href="#"> home </a></li>
-      <li><a href="#"> learn </a></li>
-      <li><a href="#"> quiz </a></li>
-      <li><a href="#"> tutorial </a></li>
-      <li><a href="#"> history </a></li>
-    </ul>
-  </div>
-  <div id="wrapper">
-    <h1>Tutorial</h1>
-    <div id="boxes">
-      <!-- Part 1 of tutorial -->
-      <h2>Setting up your environment</h2>
-      <br />
-      <br />
-      If you are a Macbook User (Unix/Linux is already accesible to you):
-      <br /><br />
-      <input type="checkbox" id="box-1" />
-      <label for="box-1">
-        You can find the terminal by going to your utilities folder then
-        selecting the terminal.
-      </label>
-      <input type="checkbox" id="box-2" />
-      <label for="box-2">
-        When you open your terminal you will first see the last login on your
-        account as well<br />
-        as the prompt which ends in a dollar sign($).
-      </label>
-      <input type="checkbox" id="box-3" />
-      <label for="box-3">
-        Now you are all set up to use Linux and practice some commands that you
-        will see soon.
-      </label>
-      <br /><br />
-      If you are a Windows User (Unix/Linux is not already accesible to you):
-      <br /><br />
-      <input type="checkbox" id="box-4" />
-      <label for="box-4"> Go to settings in Windows 10 </label>
-      <input type="checkbox" id="box-5" />
-      <label for="box-5">
-        On the left, you will see for developers click on that button
-      </label>
-      <input type="checkbox" id="box-6" />
-      <label for="box-6">
-        Now click the button Developer mode, this will take a few mins to
-        install
-      </label>
-      <input type="checkbox" id="box-7" />
-      <label for="box-7"> Open your control panel </label>
-      <input type="checkbox" id="box-8" />
-      <label for="box-8"> Click on programs </label>
-      <input type="checkbox" id="box-9" />
-      <label for="box-9"> Then click turn windows features on or off </label>
-      <input type="checkbox" id="box-10" />
-      <label for="box-10">
-        Scroll down to Windows Subsystem for Linux and check the box and hit
-        okay
-      </label>
-      <input type="checkbox" id="box-11" />
-      <label for="box-11">
-        Once this is done you will have to click restart to restart your
-        computer with the new software
-      </label>
-      <input type="checkbox" id="box-12" />
-      <label for="box-12">
-        Once your computer is restarted then go to windows store and search for
-        ubuntu
-      </label>
-      <input type="checkbox" id="box-13" />
-      <label for="box-13">Click on ubuntu and install it </label>
-      <input type="checkbox" id="box-14" />
-      <label for="box-14"> Once it is installed click the launch button </label>
-      <input type="checkbox" id="box-15" />
-      <label for="box-15">
-        It will ask you to create a new Unix username so type that in
-      </label>
-      <input type="checkbox" id="box-16" />
-      <label for="box-16"> Then enter a custom password </label>
-      <input type="checkbox" id="box-17" />
-      <label for="box-17"> Now once that is done you are in Linux </label>
-      <input type="checkbox" id="box-18" />
-      <label for="box-18">
-        type in the changing directory command in order to direct to the desktop
-        'cd /mnt/c/users/ComputerUsername/Desktop'
-      </label>
-      <input type="checkbox" id="box-19" />
-      <label for="box-19">
-        Type the previous command out and replace ComputerUsername with whatever
-        your username is and press enter
-      </label>
-      <input type="checkbox" id="box-20" />
-      <label for="box-20">
-        Now you are ready to continue to more tutorials have fun!
-      </label>
-      <br />
-      Once your environment is set up download this file for the rest of the
-      tutorial:
-      <br /><br />
-      <a href="Untitled-3.txt" class="buttonDownload" target="_blank" download>
-        <label for="box-1"> </label>
-        Click to Download</a
-      >
-      <br /><br />
-      Download the file and place it on your desktop. Once this is done open
-      your<br />command terminal that you were able to open based on the
-      instructions above<br />
-      and get ready for the commands you will be using in the next step to this
-      tutorial. <br /><br />
-    </div>
-    <!-- end of boxes -->
-    <br /><br />
-    <div id="boxes">
-      <!-- Part 2 of tutorial -->
-      <h2>Introduction Commands</h2>
-      <br />
-      <br />
-      Using your terminal please follow along with each step to successfully<br />complete
-      the tutorial and understand how to use the commands your learned:
-      <br /><br />
-      <input type="checkbox" id="box-21" />
-      <label for="box-21"> Type 'cd desktop' into the command terminal </label>
-      <input type="checkbox" id="box-22" />
-      <label for="box-22">
-        Type 'mkdir tutorial' which will make a folder called tutorial
-      </label>
-      <input type="checkbox" id="box-23" />
-      <label for="box-23">
-        Type 'mv Untitled-3.txt ~/Desktop/tutorial' in order to move the
-        directory into the tutorial folder
-      </label>
-      <input type="checkbox" id="box-24" />
-      <label for="box-24">
-        Type 'cd tutorial' This will redirect you into the tutorial folder
-      </label>
-      <input type="checkbox" id="box-25" />
-      <label for="box-25">
-        Type 'mv Untitled-3.txt BasixUnix.txt' this will rename the file to
-        BasixUnix
-      </label>
-      <input type="checkbox" id="box-26" />
-      <label for="box-26">
-        In order for you to check that this worked type 'ls *.txt' if the file
-        BasixUnix displayed <br />it was done correctly. If it was not done
-        correctly go back to the previous step and try again.
-      </label>
-      <label for="q1"> What is the size of the folder?&nbsp;&nbsp;</label>
-      <input type="text" id="q1" />
-      <div id="result1" class="result"><p></p></div>
-
-      <input type="checkbox" id="box-27" />
-      <label for="box-27"
-        >Type 'mkdir changesToFile' which will make a new folder called
-        changesToFile
-      </label>
-      <input type="checkbox" id="box-28" />
-      <label for="box-28">
-        Type 'cp BasixUnix.txt ChangedBasixUnix.txt' this will create a copy of
-        the file named ChangedBasicUnix
-      </label>
-      <input type="checkbox" id="box-29" />
-      <label for="box-29"
-        >Type 'mv ChangedBasixUnix ~/tutorial/changesToFile' to move the txt
-        file into the newly made folder
-      </label>
-      <input type="checkbox" id="box-30" />
-      <label for="box-30"
-        >Now move into that the folder changesToFile by typing 'cd
-        changesToFile'
-      </label>
-      <input type="checkbox" id="box-31" />
-      <label for="box-31">
-        Let's say you accidently changed directories into the wrong folder and
-        do not know where you are in your file system<br />
-        type the command 'ls' in order to see all the information about the
-        folder.
-      </label>
-      <input type="checkbox" id="box-32" />
-      <label for="box-32">
-        If you ever go too far into a different folder you did not want to be in
-        try typing 'cd..' now you should be back in<br />the tutorial folder
-        only and no longer in the changesToFile folder.
-      </label>
-      <input type="checkbox" id="box-33" />
-      <label for="box-33">
-        Now go back into the changesToFile folder by using the command 'cd
-        changesToFile'
-      </label>
-      <input type="checkbox" id="box-34" />
-      <label for="box-34">
-        Now we will start looking at file permissions. In order to look at the
-        file permission of a file type 'ls -l'
-      </label>
-      <br />
-      <label for="q2"
-        >What are the file permissions of the ChangedBasixUnix.txt
-        file?&nbsp;&nbsp;</label
-      >
-      <input type="text" id="q2" />
-      <div id="result2" class="result"><p></p></div>
-      <input type="checkbox" id="box-35" />
-      <label for="box-35">
-        Now in order to allow yourself to access and modify the file you are
-        going to want the file permission to be 777 do this<br />
-        by typing 'chmod 777/ChangedBasixUnix.txt'
-      </label>
-      <input type="checkbox" id="box-36" />
-      <label for="box-36">
-        Now you are able to access and modify the file so type 'nano
-        ChangedBasixUnix.txt'
-      </label>
-      <input type="checkbox" id="box-37" />
-      <label for="box-37">
-        Type in whatever message you want into this file then press 'Ctl+x' to
-        exit and 'Ctl+Y' to save changes
-      </label>
-      <input type="checkbox" id="box-38" />
-      <label for="box-38">
-        Type 'echo "$(&lt;changedBaixUnix)"'in order to see the file printed in
-        the command terminal
-      </label>
-      <br />
-      <button id="submit">Submit to Check</button>
-      <br /><br />
-      You have now finished the tutorial Congratulations! Feel free to try the
-      tutorial again to practice<br />and if you feel confident enough please
-      proceed to take the quizes on the quiz page.
-    </div>
-    <!-- end of boxes -->
-  </div>
-  <!-- end of wrapper -->
-</html>
+/*Change all px to em */
+#containerQuiz {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1em;
+  /*  box-shadow: 0 3px 3px rgba(0,0,0,0.2);*/
+}
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+input {
+  display: block;
+}
+#submit {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  color: white;
+  background: #4caf50;
+  cursor: pointer;
+  padding: 0.5em;
+}
+video {
+  outline: none;
+}
+/* labels for Result */
+.result p {
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.correct {
+  background: #2ecc40;
+}
+.wrong {
+  background: #ff4136;
+}
+/* end of mini quiz */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 75%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  font-size: 75%;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #4caf50;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator -- change px to em!!!*/
+#wrapper .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* php will have an external css for the wrapper */
+#wrapper {
+  min-height: 20vh;
+  /*padding: 2vh 3em; */
+  color: hsl(0, 100%, 100%);
+  font-size: 130%;
+  /*    padding: 3em;*/
+  background-color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+#wrapper a {
+  color: #fff;
+}
+h1 {
+  line-height: 1.5;
+  display: inline;
+  background-image: linear-gradient(
+    transparent 50%,
+    #4caf10 50%,
+    #4caf50 85%,
+    transparent 85%,
+    transparent 85%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s
+    forwards;
+}
+h2 {
+  line-height: 1.5;
+  display: inline;
+  background-image: linear-gradient(
+    transparent 50%,
+    #4caf10 50%,
+    #4caf50 85%,
+    transparent 85%,
+    transparent 85%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s
+    forwards;
+}
+@keyframes animatedBackground {
+  to {
+    background-size: 100% 100%;
+  }
+}
+.centr {
+  text-align: center;
+  position: relative;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/*Page styles*/
+#boxes {
+  margin: auto;
+  padding: 3em;
+  /*    background: #484848;*/
+  /*font-family: 'Fira Code', monospace;*/
+  border: 0.1875em solid white;
+  min-height: 20vh;
+  padding: 3em 3em;
+  border-image-source: linear-gradient(
+    to right,
+    #8ccac9,
+    #74bea5,
+    #9abf7a,
+    #e0aa2e
+  );
+  border-image-slice: 1;
+  font-size: 100%;
+}
+p {
+  text-align: left;
+}
+dt {
+  text-decoration: underline;
+}
+.command {
+  max-width: 35em;
+  padding-top: 1em;
+}
+/*Checkboxes styles*/
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 2.5em;
+  margin-bottom: 2.5em;
+  font: 0.875em/1.25em "Open Sans", Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+input[type="checkbox"] + label:last-child {
+  margin-bottom: 0;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  border: 0.0625em solid #4caf50;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.12s, border-color 0.08s;
+  transition: all 0.12s, border-color 0.08s;
+}
+input[type="checkbox"]:checked + label:before {
+  width: 0.625em;
+  top: -0.3125em;
+  left: 0.3125em;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.buttonDownload {
+  display: inline-block;
+  position: relative;
+  padding: 0.625em 1.5625em;
+  background-color: #4caf10;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 0.9375em;
+}
+.buttonDownload:hover {
+  background-color: #333;
+}
+.buttonDownload:before,
+.buttonDownload:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0.9375em;
+  top: 52%;
+}
+/* Download box shape  */
+.buttonDownload:before {
+  width: 0.625em;
+  height: 0.125em;
+  border-style: solid;
+  border-width: 0 0.125em 0.125em;
+  color: white;
+}
+/* Download arrow shape */
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 0.1875em;
+  margin-top: -0.4375em;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0.25em;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 2s linear infinite;
+  animation-play-state: paused;
+}
+.buttonDownload:hover:before {
+  border-color: #4caf10;
+  color: #fff;
+}
+.buttonDownload:hover:after {
+  border-top-color: #4cc713;
+  animation-play-state: running;
+}
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+  /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+  0% {
+    margin-top: -0.4375em;
+    opacity: 1;
+  }
+  0.001% {
+    margin-top: -0.9375em;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
