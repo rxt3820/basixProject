@@ -18,8 +18,12 @@ input {
   margin: 0 auto;
   border: 0;
   color: white;
-  background: #0074d9;
+  background: #4caf50;
+  cursor: pointer;
   padding: 0.5em;
+}
+video {
+  outline: none;
 }
 /* labels for Result */
 .result p {
