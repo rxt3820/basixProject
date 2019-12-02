@@ -46,7 +46,7 @@ h1 {
     /*    background: #484848;*/
     font-family: 'Fira Code', monospace;
     border: 0.1875em solid;
-    border-image-source: linear-gradient(to right, #8CCAC9, #74BEA5, #9ABF7A, #E0AA2E);
+    border-image-source: linear-gradient(to right, #00F260, #0575E6);
     border-image-slice: 1;
     min-height: 20vh;
     padding: 3em 3em;
@@ -60,11 +60,16 @@ p {
 
 dt {
     text-decoration: underline;
+    font-size: 1.3em;
 }
 
 .command {
+    z-index: 0;
+    width: 100%;
     max-width: 35em;
+    height: auto;
     padding-top: 1em;
+    display: inline-flex;
 }
 
 /*Checkboxes styles*/
@@ -120,3 +125,4 @@ input[type="checkbox"]:checked + label:before {
         display: none;
     }
 }
+
