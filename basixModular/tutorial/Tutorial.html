@@ -43,7 +43,7 @@
           }
         }
         function init() {
-          var submit = document.getElementById("submit");
+          var submit = document.getElementById("submitSurvey");
 
           submit.addEventListener("click", getResult);
         }
@@ -280,8 +280,14 @@
         the command terminal
       </label>
       <br />
-      <button id="submit">Submit to Check</button>
-      <br /><br />
+      Click the submit button to check your answers.
+      <!-- <button id="submit">Submit to Check</button> -->
+      <div class="surveyform" id="surveyButton">
+        <button id="submitSurvey" type="submit">
+          <img id="submitPic" src="../assets/submit.png" />
+        </button>
+      </div>
+      <br />
       You have now finished the tutorial Congratulations! Feel free to try the
       tutorial again to practice<br />and if you feel confident enough please
       proceed to take the quizes on the quiz page.
