@@ -487,7 +487,7 @@ span.psw {
     nav label {
         display: inline-block;
         color: #fff;
-        background-image: linear-gradient(to right, #8CCAC9, #74BEA5, #9ABF7A, #E0AA2E);
+        background-image: linear-gradient(to right, #00F260, #0575E6);
         font-style: normal;
         font-size: 1.4em;
         padding: 0.625em;
@@ -614,15 +614,4 @@ span.psw {
     
 }
 
-@media (max-width: 625px) {
-
-    img.command {
-        display: none;
-    }
-
-    button#signupButton,
-    button#loginButton {
-        align-content: center;
-    }
-}
 
