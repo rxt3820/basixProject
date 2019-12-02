@@ -13,14 +13,20 @@ label {
 input {
   display: block;
 }
-#submit {
-  display: block;
-  margin: 0 auto;
-  border: 0;
-  color: white;
-  background: #4caf50;
+#submitPic {
+  max-width: 13em;
+}
+#submitSurvey {
+  background: none;
+  border: none;
+  padding: 0.4em;
+  outline: none;
   cursor: pointer;
-  padding: 0.5em;
+}
+#surveyButton {
+  text-align: center;
+  padding-bottom: 3em;
+  padding-top: 1em;
 }
 video {
   outline: none;
@@ -160,13 +166,7 @@ h2 {
   border: 0.1875em solid white;
   min-height: 20vh;
   padding: 3em 3em;
-  border-image-source: linear-gradient(
-    to right,
-    #8ccac9,
-    #74bea5,
-    #9abf7a,
-    #e0aa2e
-  );
+  border-image-source: linear-gradient(to right, #00f260, #0575e6);
   border-image-slice: 1;
   font-size: 100%;
 }
