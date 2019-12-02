@@ -48,7 +48,7 @@
   letter-spacing: 2px;
 }
 .ew:after {
-  content: "Login";
+/*  content: "Login";*/
 }
 
 .onclic {
@@ -101,12 +101,12 @@
 }
 
 #signupPic,
-#loginPic {
+#loginPic,#profilePic  {
     max-width: 13em;
 }
 
 #signupButton,
-#loginButton {
+#loginButton ,#profilePic {
     background: none;
     border: none;
     outline: none;
@@ -332,7 +332,7 @@ input[type=password] {
     padding: 10px 18px;
     background-color: #f44336;
 }
-.cancelbtn2 {
+span .cancelbtn2 {
     width: auto;
     padding: 10px 18px;
     background-color: #4CAF50;
@@ -357,6 +357,8 @@ img.avatar {
 span.psw {
     float: right;
 }
+
+
 
 /* The Modal (background) */
 .modal {
@@ -413,6 +415,10 @@ span.psw {
     animation: animatezoom 0.6s
 }
 
+/*CSS FOR PROFILE PIC*/
+#profileLink{
+    
+}
 @-webkit-keyframes animatezoom {
     from {
         -webkit-transform: scale(0)
@@ -436,7 +442,6 @@ span.psw {
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
-        display: block;
         float: none;
     }
 
@@ -449,7 +454,7 @@ span.psw {
 @media (min-width: 900px) {
 
     #signupButton,
-    #loginButton {
+    #loginButton,{
         align-content: center;
     }
 
