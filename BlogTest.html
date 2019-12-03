@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Basix W/ Unix </title>
+    <link rel="stylesheet" type="text/css" href="YUPPP.css">
+
+    <link rel="stylesheet" type="text/css" href="LoginTest.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'>
+    <link rel="stylesheet" href="nav.css">
+
+    <script src="simply-nav.js"></script>
+
+</head>
+
+<header>
+    <div id="buttons">
+        <button id="signupButton" type="submit"><img id="signupPic" src="assets/signup.png"></button>
+        <button id="loginButton" type="submit"><img id="loginPic" src="assets/login.png"></button>
+    </div>
+
+    <div id="logo">
+        <img id="logoPic" src="assets/basixlogo.jpg" alt="basix w: unix">
+    </div>
+    <div id="navbar">
+
+        <nav>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <ul>
+                <li><a href="#"> home </a></li>
+                <li><a href="gradient_test.html"> learn </a></li>
+                <li><a href="#"> quiz </a></li>
+                <li><a href="tutorial-test.html"> tutorial </a></li>
+                <li><a href="#"> history </a></li>
+                <div id="indicator"></div>
+            </ul>
+        </nav>
+    </div>
+
+
+    <body>
+
+        <div id="wrapper">
+
+            <body>
+
+                <div class="form">
+
+                    <form class="login-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET" onsubmit="return validateForm();">
+                        <h1>Comments</h1>
+                        <input id="name" type="text" placeholder="Name" name="name" style="background-color: transparent; font-size: 1em;" />
+                        <input id="comment" type="text" placeholder="Comment" name="comment" style="background-color: transparent; font-size: 1em;"/>
+                        <button class="btn effect012">Submit</button>
+
+                    </form>
+                </div>
+        
+
+
+
+        <!-- <table>
+<tr>
+    <th colspan="4" align="center"> <h1>Blog Comments</h1></th>
+
+</tr>
+<tr>
+<td>ID</td>
+<td>Name</td>
+<td>Date </td>
+<td>Comment</td>
+
+</tr> -->
+        <div class="table-title">
+            <h3 style="padding-top: 3em;">Comments Table</h3>
+        </div>
+        <table class="table-fill">
+            <thead>
+                <tr>
+                    <th class="text-left">Name</th>
+                    <th class="text-left">Comments</th>
+                </tr>
+            </thead>
+            <tbody class="table-hover">
+
+                <?php
+foreach ($records as $this_row) {
+    // echo "<td>" . $this_row['name'] . $this_row['comment'] .  "</td>";
+    echo "<tr>";
+    echo '<td class="text-left" >' . $this_row['name'] . "</td>";
+    echo '<td class="text-left">'. $this_row['comment'] . "</td>" ;
+    echo "</tr>";
+}
+
+?>
+
+            </tbody>
+        </table>
+    </body>
+
+
