@@ -1,13 +1,13 @@
 
-
-body {
+.wrapper {
     min-height: 20vh;
     /*padding: 2vh 3em; */
     color: hsl(0, 100%, 100%);
     font-size: 130%;
+    padding: 3em;
 }
 
-body a {
+.wrapper a {
     color: #4CAF50
 }
 
@@ -15,8 +15,8 @@ h1 {
     line-height: 1.5;
     display: inline;
     background-image: linear-gradient(transparent 50%,
-            #4CAF10 50%,
-            #4CAF50 85%,
+            #2BAE66FF 50%,
+            #2BAE66FF 85%,
             transparent 85%,
             transparent 85%);
     background-repeat: no-repeat;
@@ -45,7 +45,9 @@ h1 {
     padding: 3em;
     /*    background: #484848;*/
     font-family: 'Fira Code', monospace;
-    border: 0.1875em solid white;
+    border: 0.1875em solid;
+    border-image-source: linear-gradient(to right, #00F260, #0575E6);
+    border-image-slice: 1;
     min-height: 20vh;
     padding: 3em 3em;
     color: hsl(0, 100%, 100%);
@@ -58,11 +60,16 @@ p {
 
 dt {
     text-decoration: underline;
+    font-size: 1.3em;
 }
 
 .command {
+    z-index: 0;
+    width: 100%;
     max-width: 35em;
+    height: auto;
     padding-top: 1em;
+    display: inline-flex;
 }
 
 /*Checkboxes styles*/
@@ -112,94 +119,9 @@ input[type="checkbox"]:checked + label:before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+@media (max-width: 625px) {
 
-
-
-
-
-/************TUTORIAL PAGE CSS*********/
-
-
-
-.buttonDownload {
-	display: inline-block;
-	position: relative;
-	padding: 0.625em 1.5625em;
-  
-	background-color: #4CAF10;
-	color: white;
-  
-	text-decoration: none;
-	font-size: 0.9em;
-	text-align: center;
-	text-indent: 0.9375em;
-}
-
-.buttonDownload:hover {
-	background-color: #333;
-	color: white;
-}
-
-.buttonDownload:before, .buttonDownload:after {
-	content: ' ';
-	display: block;
-	position: absolute;
-	left: 0.9375em;
-	top: 52%;
-}
-
-/* Download box shape  */
-.buttonDownload:before {
-	width:  0.625em;
-	height: 0.125em;
-	border-style: solid;
-	border-width: 0 0.125em 0.125em;
-}
-
-/* Download arrow shape */
-.buttonDownload:after {
-	width: 0;
-	height: 0;
-	margin-left: 0.1875em;
-	margin-top: -0.4375em;
-  
-	border-style: solid;
-	border-width: 0.25em 0.25em 0 0.25em;
-	border-color: transparent;
-	border-top-color: inherit;
-	
-	animation: downloadArrow 2s linear infinite;
-	animation-play-state: paused;
-}
-
-.buttonDownload:hover:before {
-	border-color: #4CAF10;
-}
-
-.buttonDownload:hover:after {
-	border-top-color: #4CC713;
-	animation-play-state: running;
-}
-
-/* keyframes for the download icon anim */
-@keyframes downloadArrow {
-	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
-	0% {
-		margin-top: -0.4375em;
-		opacity: 1;
-	}
-	
-	0.001% {
-		margin-top: -0.9375em;
-		opacity: 0;
-	}
-	
-	50% {
-		opacity: 1;
-	}
-	
-	100% {
-		margin-top: 0;
-		opacity: 0;
-	}
+    img.command {
+        display: none;
+    }
 }
