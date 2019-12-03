@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Basix W/ Unix </title>
+    <link rel="stylesheet" type="text/css" href="YUPPP.css">
+    <link rel="stylesheet" type="text/css" href="LoginTest.css">
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'>
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://use.fontawesome.com/7c08535684.js"></script>
+    <script src="simply-nav.js"></script>
+
+</head>
+<div id="login">
+    <form class="login-form" action="javascript:void(0);">
+        <h1>Sign up</h1>
+        <div class="form-field">
+            <i class="fa fa-user" aria-hidden="true" style="background-color: transparent;"></i>
+            <input type="text" name="username" id="username" class="form-field" pattern="^[a-zA-Z0-9_-]{1,16}$" placeholder=" " required>
+            <label for="username">Username</label>
+        </div>
+        <div class="form-field">
+            <i class="fa fa-lock" aria-hidden="true" style="background-color: transparent;"></i>
+            <input type="password" name="password" id="password" class="form-field" placeholder=" " required>
+
+            <label for="password">Password</label>
+
+        </div>
+        <button type="submit" value="Login" class="btn">Sign Up</button>
+        All ready have an account?
+        <strong style="background-color: transparent;"><a href="#" style="background-color: transparent;">Login</a></strong>
+    </form>
+</div>
