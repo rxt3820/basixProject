@@ -468,6 +468,10 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+    
+    #signupButton, #loginButton {
+        display: none;
+    }
 }
 
 /* media Queries */
