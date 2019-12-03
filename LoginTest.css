@@ -79,7 +79,7 @@
 }
 
 .login-form .form-field input:invalid ~ label {
-    color: #2BAE66FF;
+    color: white;
 }
 
 .login-form .form-field label {
@@ -147,7 +147,7 @@ div.table-title {
 }
 
 ::placeholder {
-    color: black;
+    color: white;
 }
 
 /*** Table Styles **/
@@ -167,7 +167,6 @@ div.table-title {
 
 th {
     color: #D5DDE5;
-    ;
     background: #1b1e24;
     border-bottom: 4px solid #9ea7af;
     border-right: 1px solid #343a45;
