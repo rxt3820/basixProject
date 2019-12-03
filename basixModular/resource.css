@@ -1,0 +1,24 @@
+* {
+    margin-top: 5em;
+    padding: 0;
+    background-color: black;
+    font-family: 'IPM Plex Sans', sans-serif;
+    color: white;
+}
+
+.box{
+
+    text-align: center;
+
+
+}
+
+embed{
+
+    width: 80%;
+    height: 600px;
+    text-align: center;
+    margin-left: 10em;
+    margin-bottom: 5em;
+
+}
