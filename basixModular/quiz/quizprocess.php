@@ -120,6 +120,18 @@
     </body>
 
 <?php
+   
+    $user = $_SESSION['username'];
+    $score = $countCorrect;           
+    
+    $stmt = $mysqli->prepare("INSERT INTO QuizScore (name, score) VALUES (?, ?)");
+    $stmt->bind_param("ss", $user, $score);
+    $stmt->execute();
+    $stmt->close();   
+    
+?>
+
+<?php
         $page = 'quizprocess';
         require '../dbConnect.inc';  
 		$sql = "SELECT internalCSS FROM home where page='$page'";
